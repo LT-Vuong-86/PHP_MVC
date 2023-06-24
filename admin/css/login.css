@@ -1,0 +1,31 @@
+.khung-chua-san-pham{
+	margin-top: 10px;
+	margin-left: 20px;
+	display: inline-block;
+	width: 874px;
+	min-width: 874px;
+}
+.section{
+	display: inline-block;
+	height:400px;
+	width: auto;
+	background-color: rgb(136, 208, 226);
+}
+.section-head{
+	margin: 0;
+	font-size: 22px;
+	border: 1px solid rgb(191, 191, 191);
+	margin-left: 2px;
+	padding-top: 8px;
+	width: 858px;
+	padding-bottom: 5px;
+	text-indent: 30px;
+	background: linear-gradient(to right,#003e52,#1895b0);
+	color: white;
+	border-radius: 8px;
+}
+form{
+	padding-top: 20px;
+    text-align: center;
+}
+

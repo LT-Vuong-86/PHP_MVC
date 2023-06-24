@@ -1,0 +1,66 @@
+.khung-chua-san-pham{
+	margin-top: 13px;
+	margin-left: 20px;
+	display: inline-block;
+	width: 960px;
+	min-width: 960px;
+}
+.section{
+	display: inline-block;
+	height:400px;
+	width: auto;
+	background-color: rgb(136, 208, 226);
+}
+.section-head{
+	margin: 0;
+	font-size: 22px;
+	border: 1px solid rgb(191, 191, 191);
+	margin-left: 2px;
+	padding-top: 8px;
+	width: 960px;
+	padding-bottom: 5px;
+	text-indent: 30px;
+	background: linear-gradient(to right,#003e52,#1895b0);
+	color: white;
+	border-radius: 8px;
+}
+form{
+    text-align: center;
+}
+p{
+    font-size: xx-large;
+}
+form table {
+    
+    margin-left: 10px;
+    font-size: 16px;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+form table tbody tr td{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.btn a{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(15, 53, 224);
+    text-decoration: none;
+    
+}
+.btn a:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+
