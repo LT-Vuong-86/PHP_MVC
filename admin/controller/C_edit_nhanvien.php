@@ -1,12 +1,10 @@
 <?php
 if (isset($_SESSION['ss_admin'])) {
-    $user1=$db->get('admin_nhanvien', array('id'=>$_SESSION['ss_admin']));
- if ($user1=[0]['lv']==1) {
+    $user=$db->get('admin_nhanvien', array('id'=>$_SESSION['ss_admin']));
+if ($user[0]['lv']==1) {
 if (isset($_GET['id'])) {
     $id=$_GET['id'];
-
-    $user=$db->get('admin_nhanvien', array('id'=>$id));
-
+    $user1=$db->get('admin_nhanvien', array('id'=>$id));
 if(isset($_POST['btn_sua'])){
     $username=$_POST['username'];
    $password=$_POST['password'];
@@ -25,9 +23,9 @@ if(isset($_POST['btn_sua'])){
     );
     header('location: ?controller=trangchu');
     
-}
-}
-}
+};
+};
+};
 }
 else {
    header('location: ?controller=login');

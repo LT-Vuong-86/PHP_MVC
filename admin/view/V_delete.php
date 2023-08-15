@@ -22,12 +22,24 @@ margin-left: 40px;
 }
 </style>
 <body>
+    <?php if ($user[0]['lv']==1) { ?>
     <section id="tav" >
         <h3>bạn có chắc muốn xóa!</h3>
 <form action="" method="POST">
         <input type="submit" name='ok'  value='ok'>
         <input type="submit" name='huy' value='hủy'>
         </form>
+       
     </section>
+ <?php }
+else{
+    echo "<section id='tav' >
+    <h3>Bạn ko có quyền!</h3>
+
+    <a href='?controller=trangchu'><input type='submit'   value='ok'> </a>
+
+</section>";
+} 
+ ?>
 </body>
 </html>

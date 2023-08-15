@@ -4,8 +4,8 @@
     $address = $_POST['address'];
      $phone = $_POST['phone'];
      $email = $_POST['email'];
-    $oder_id = 1;
-    
+    $oder_id = 0;
+    $date_oder = date("y/m/d");
     $oder = $db->get('oder', array());
      foreach ($oder as $key => $value) 
      { $oder_id += $value['id']; }
@@ -18,13 +18,11 @@
       'product_id'=>$value['id'],
       'qty'=>$value['sl'],
       'price'=>$value['price'],
-      'amount'=>$tongtien,
+      'amount'=>$tongtien
+      
    ));
    
    }
-    
-    
-    
     $db->insert('oder',
      array( 
         'id'=>$oder_id, 
@@ -33,10 +31,10 @@
        'email'=>$email,
         'amount'=>$tongtien,
     'phone'=>$phone, 
-    'status'=>0
-    
+    'status'=>0,
+    'Date_oder'=>$date_oder
     )); 
-    
+    unset($_SESSION['cart']);
     header('location: ?controller=hoadon');
 }
 require 'view/V_checkout.php';

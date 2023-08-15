@@ -4,7 +4,7 @@ protected $conn =null;
 protected $host ='localhost';
 protected $user ='root';
 protected $pass = '';
-protected $dbname ='pro_banhang';
+protected $dbname ='d0204';
 public function __construct()
 {
     $this->conn=new mysqli($this->host,$this->user,$this->pass,$this->dbname);

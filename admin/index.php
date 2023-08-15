@@ -21,20 +21,30 @@ $controller = 'login';}
       include 'controller/C_dsnhanvien.php';
          break;
    case 'delete':
-     include 'controller/C_delete.php';
+     include 'controller/C_delete_nv.php';
      break;
-   // case 'V_delete':
-   //    include 'view/V_delete_nhanvien.php';
-   //    break;
-   case 'add':
+   case 'add_nv':
       include 'controller/C_add_nhanvien.php';
       break;
    case 'edit':
       include 'controller/C_edit_nhanvien.php';
       break;
-   // case 'V_edit':
-   //     include 'controller/C_edit_nhanvien.php';
-   //     break;   
+   case 'add_sp':
+      include 'controller/C_add_sanpham.php';
+      break;
+   case 'edit_sp':
+      include 'controller/C_edit_sp.php';
+      break;
+   case 'delete_sp':
+      include 'controller/C_delete_sp.php';
+      break;  
+   case 'xuli_oder':
+      include 'controller/C_xuli_oder.php';
+      break;
+   case 'chitiet_oder':
+      include 'controller/C_chitiet_oder.php';
+      break;    
+         
       default:
 }
 ?>
